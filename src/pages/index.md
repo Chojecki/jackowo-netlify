@@ -3,7 +3,6 @@ templateKey: index-page
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
-marek: Marek
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
@@ -18,7 +17,7 @@ description: >-
   roasting and brewing seriously and we’re glad to pass that knowledge to
   anyone.
 marek: >-
-  Marek
+  Marek Barek
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -71,4 +70,3 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
-

@@ -12,9 +12,9 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   mainpitch,
-  marek,
   description,
-  intro
+  intro,
+  marek
 }) => (
   <div>
     <div
@@ -48,7 +48,7 @@ export const IndexPageTemplate = ({
             padding: "0.25em"
           }}
         >
-          {title}
+          {marek}
         </h1>
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
@@ -61,7 +61,7 @@ export const IndexPageTemplate = ({
             padding: "0.25em"
           }}
         >
-          {`I love ${marek}`}
+          {subheading}
         </h3>
       </div>
     </div>
