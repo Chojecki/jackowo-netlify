@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
+image: /img/brown-horse-on-field-6468.jpg
 heading: Great coffee with a conscience
 marek: Stajnia Jackowo
 subheading: Zapisy tylko u Rage Beti  0700-900-huj
