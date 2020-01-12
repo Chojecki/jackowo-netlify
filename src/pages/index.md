@@ -3,8 +3,8 @@ templateKey: index-page
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
-marek: Dorota
-subheading: Support sustainable farming while enjoying a cup
+marek: Stajnia Jackowo
+subheading: Zapisy tylko u Rage Beti  0700-900-huj
 mainpitch:
   title: Why Kaldi
   description: >
