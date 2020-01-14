@@ -7,6 +7,7 @@ pointOne: Rekreacja i Trening
 pointTwo: Pensjonat
 pointThree: Lekcje dla dzieci
 subheading: Nie sztuką jest kochać konie, sztuką jest sprawić by konie pokochały Ciebie
+
 mainpitch:
   title: Kilka słów o nas
   description: >
