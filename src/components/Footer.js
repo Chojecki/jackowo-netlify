@@ -30,15 +30,15 @@ const Footer = class extends React.Component {
                     display: "flex"
                   }}
                 >
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/">
                     Nasze Konie
                   </Link>
 
-                  <Link className="navbar-item" to="/about">
+                  <Link className="navbar-item" to="/">
                     Facebook
                   </Link>
 
-                  <Link className="navbar-item" to="/contact/examples">
+                  <Link className="navbar-item" to="/">
                     Cennik
                   </Link>
 

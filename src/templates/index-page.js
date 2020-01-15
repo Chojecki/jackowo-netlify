@@ -4,15 +4,18 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import { SideToSide } from "../components/SideToSide";
+import SideFullSection from "../components/SideFullSection";
+import Points from "../components/Points";
+import beata from "../img/beata.jpg";
 
 export const IndexPageTemplate = ({
   image,
   title,
-  heading,
+  main,
   subheading,
   mainpitch,
-  description,
-  intro,
+  main2,
+  points,
   pointOne,
   pointTwo,
   pointThree
@@ -63,46 +66,79 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
       <div className="jumbotron-pointsgroup">
-        <Link to="/products">
+        <Link to="/">
           <div className="jumbotron-points">
             <p>{pointOne}</p>
           </div>
         </Link>
-        <Link to="/products">
+        <Link to="/">
           <div className="jumbotron-points">
             <p>{pointTwo}</p>
           </div>
         </Link>
-        <Link to="/products">
+        <Link to="/">
           <div className="jumbotron-points">
             <p>{pointThree}</p>
           </div>
         </Link>
       </div>
     </div>
+    <section className="section">
+      <div className="column is-10 is-offset-1" style={{ paddingBottom: 65 }}>
+        <div className="content">
+          <div className="columns">
+            <div className="column is-12">
+              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
+                {mainpitch.title}
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Points points={points} />
+    </section>
+
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold has-text-centered is-size-2">
-                      {mainpitch.title}
-                    </h3>
-                    <SideToSide
-                      image={image.childImageSharp.fluid.src}
-                      text={mainpitch.description}
-                    />
-                    <SideToSide
-                      image={image.childImageSharp.fluid.src}
-                      text={mainpitch.description}
-                      rev
-                    />
-                  </div>
+            <div className="content">
+              <div className="columns">
+                <div className="column is-12">
+                  <SideToSide
+                    image={mainpitch.image.image.childImageSharp.fluid.src}
+                    text={mainpitch.description}
+                  />
+                  <SideToSide
+                    image={mainpitch.image2.image.childImageSharp.fluid.src}
+                    text={mainpitch.description2}
+                    rev
+                  />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <SideFullSection rev main={main} />
+    <SideFullSection main={main2} />
+    <section className="section" style={{ padding: 65 }}>
+      <div className="columns">
+        <div className="column has-text-centered is-12">
+          <img src={beata} />
+        </div>
+      </div>
+      <div className="column is-10 is-offset-1">
+        <div className="content">
+          <div className="columns">
+            <div className="column is-12">
+              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
+                Skontaktuj się z nami
+              </h3>
+              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
+                668 301 333
+              </h3>
             </div>
           </div>
         </div>
@@ -139,6 +175,9 @@ const IndexPage = ({ data }) => {
         pointOne={frontmatter.pointOne}
         pointTwo={frontmatter.pointTwo}
         pointThree={frontmatter.pointThree}
+        main={frontmatter.main}
+        main2={frontmatter.main2}
+        points={frontmatter.points}
       />
     </Layout>
   );
@@ -168,12 +207,62 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        points {
+          one
+          two
+          three
+        }
         pointOne
         pointTwo
         pointThree
         mainpitch {
           title
           description
+          description2
+          image {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1400, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image2 {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1400, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+        main {
+          heading
+          description
+          image {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1400, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+        main2 {
+          heading
+          description
+          image {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1400, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
         description
         intro {

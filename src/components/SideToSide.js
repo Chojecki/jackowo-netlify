@@ -11,7 +11,11 @@ export const SideToSide = ({ image, text, rev }) => {
             </div>
           )}
           <div className="column is-6">
-            <img className="side-image" src={image} />
+            <img
+              className="side-image"
+              src={image}
+              style={{ maxHeight: 400, minWidth: "100%", objectFit: "cover" }}
+            />
           </div>
           {rev && (
             <div className="column is-6">
