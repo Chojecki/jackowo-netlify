@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Rodzinna Stajnia Jackowo
-image: /img/brown-hors.jpg
+image: /img/cyranka-cytryna.jpg
 heading: Rodzinna Stajnia Jackowo
 pointOne: Rekreacja i Trening
 pointTwo: Pensjonat
@@ -22,10 +22,10 @@ mainpitch:
     Służymy również wynajmem kucyka na imprezy okolicznościowe.
   image:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/dziki.jpg
+    image: /img/summer.jpg
   image2:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/czarny.jpg
+    image: /img/sandi-aris.jpg
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
@@ -34,7 +34,7 @@ description: >-
 main:
   heading: Czego potrzebujesz aby zacząć?
   description: >
-    Jako stajnia, zapewniamy niezbędny sprzęt oraz pomoce jeźca takie jak kask czy bacik. Naley pamiętać, że podczas jazdy konno, można się ubrudzić. Przydadzą się także łatwe to umycia buty.
+    Wymagamy dobergo nastawienia, uśmiechu, spodni dresowych i wygodnych butów. Kaski mamy do dyspozycji klientów.
   image:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/inventory.jpg
