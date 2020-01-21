@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: "Stajnia Jackowo",
+    siteUrl: "https://stajnia-jackowo.netlify.com/",
     description:
       "Rodzinna stajnia Jackowo | Rekreacja | Pensjonat | Lekcje jazdy konnej"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-sass",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
