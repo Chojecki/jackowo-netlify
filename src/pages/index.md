@@ -43,6 +43,6 @@ main2:
   description: >
     Przygodę z jeździectwem można zacząć w każdym wieku. Nasza kadra instruktorska, przygotuje dla Państwa odpowiedni trening, dobrany do umiejętności. Jedyne czego potrzeba, aby zacząć, to zadzwonić i umówić się na trening :)
   image:
-    alt: A close-up of a paper filter filled with ground coffee
+    alt: A close-up of a paper filter filled with grounnd coffee
     image: /img/dziecko.jpg
 ---
