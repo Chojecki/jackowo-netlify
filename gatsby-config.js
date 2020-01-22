@@ -3,7 +3,7 @@ module.exports = {
     title: "Stajnia Jackowo",
     siteUrl: "https://stajnia-jackowo.netlify.com/",
     description:
-      "Rodzinna stajnia Jackowo | Rekreacja | Pensjonat | Lekcje jazdy konnej"
+      "Rodzinna Stajnia Wawer | Pensjonat | Proponujemy lekcje jazdy konnej w Warszawie Wawer. Rekreacja oraz imprezy firmowe. Kucyki w Warszawie Wawer"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
