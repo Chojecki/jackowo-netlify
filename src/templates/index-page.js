@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
   pointTwo,
   pointThree
 }) => (
-  <div>
+  <div className="content">
     <div
       className="full-width-image margin-top-0"
       style={{

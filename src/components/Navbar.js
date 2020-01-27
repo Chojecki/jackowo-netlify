@@ -56,6 +56,7 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
+            style={{ backgroundColor: "#2b2523" }}
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-end" style={{ width: "100%" }}>

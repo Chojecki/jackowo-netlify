@@ -7,6 +7,53 @@ import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
+import "react-image-gallery/styles/scss/image-gallery.scss";
+import ImageGallery from "react-image-gallery";
+
+import a1 from "../../static/img/gallery/a1.jpg";
+import b1 from "../../static/img/gallery/b1.jpg";
+import b2 from "../../static/img/gallery/b2.jpg";
+import c1 from "../../static/img/gallery/c1.jpg";
+import cc1 from "../../static/img/gallery/cc1.jpg";
+import d1 from "../../static/img/gallery/d1.jpg";
+import k1 from "../../static/img/gallery/k1.jpg";
+import s1 from "../../static/img/gallery/s1.jpg";
+
+const images = [
+  {
+    original: a1,
+    thumbnail: a1
+  },
+  {
+    original: b1,
+    thumbnail: b1
+  },
+  {
+    original: b2,
+    thumbnail: b2
+  },
+  {
+    original: c1,
+    thumbnail: c1
+  },
+  {
+    original: cc1,
+    thumbnail: cc1
+  },
+  {
+    original: d1,
+    thumbnail: d1
+  },
+  {
+    original: k1,
+    thumbnail: k1
+  },
+  {
+    original: s1,
+    thumbnail: s1
+  }
+];
+
 export const ProductPageTemplate = ({
   image,
   title,
@@ -90,6 +137,16 @@ export const ProductPageTemplate = ({
               <p className="is-size-5">{pricing.description}</p>
               <Pricing data={pricing.plans} /> */}
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="section">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <h3 className="has-text-weight-semibold has-text-centered is-size-2">
+              {"Galeria"}
+            </h3>
+            <ImageGallery items={images} />
           </div>
         </div>
       </div>

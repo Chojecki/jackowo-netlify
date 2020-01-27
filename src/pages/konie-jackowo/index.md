@@ -31,7 +31,7 @@ intro:
         Pierwszy źrebak urodzony w stajni – straszliwie rozpieszczony przez właścicieli, a w szczególności p.Jacka. Pod siodłem chodzi samodzielnie lub z najlepszym przyjacielem – Arisem, choć bywa że toleruje Błyska i Kacyka.
     - image: /img/blynio.jpg
       text: >
-        Błysk - Błysk (tinker)
+        Bxysk - Błysk (tinker)
         ur. 27-03-2005
         matka : Brenda po Nigel; ojciec: Picco 
         Koń w pensjonacie z przeznaczeniem do jazd rekreacyjnych oraz bryczki.
@@ -45,6 +45,11 @@ intro:
       opis: >
         Jest koniem spokojnym, niezastąpiona w tereny nawet pod niezbyt doświadczonymi jeźdźcami, nie lubi pracować na lonży na padoku i zgrzyta przeraźliwie zębami. 
         06-04-2008 r urodziła swojego pierwszego źrebaka – klaczke Cytrynkę
+    - image: /img/bies.jpg
+      text: >
+        Bies - Profesor - konik polski ur. 30-04-1997 po klaczy Bielinka po Turkus, ojciec Hades, własność stajni od 2809-2015. 134cm w kłębie.
+      opis: >
+        Koń profesor nie pracuje już pod jeźdźcami lecz trzyma całe stado w kupie:) Uwielbia przeciągać lonżujących i zwiewac na koniec padoku, Przytulanka dla dzieci i nie tylko Jego karierę sportową mozesz znależć na youtubie, był ogierem kryjącym  do 2009 r
     - image: /img/cytryna.jpg
       text: >
         Cytrynka (sl)
@@ -52,12 +57,27 @@ intro:
       url: http://www.allbreedpedigree.com/cytrynka
       opis: >
         Jest koniem ciekawskim i przyjacielskim, wręcz czasami namolnym, niczego się nie boi, jak nie może przejść bierze wszystko taranem, jeśli coś się jej nie podoba, zgrzyta zębami jak mamusia.
+    - image: /img/fredek.jpg
+      text: >
+        Fred - kuc ur.01-05-2006 po klaczy Dora ojciec Facet pierwotnie koń w pensjonacie, od 03-09-2016, 130 cm w kłębie  własność stajni
+      opis: >
+        Odkupiony, wymaga stabilnej ręki, zdecydowania i konsekwencji,najlepszy "przyjaciel" Kacyka w ucieczkach napadoku jeślidzieckonadnimnie panuje, uwielbia kąpać się zarówno w Wiśle jak i w błotku.
     - image: /img/kacyk.jpg
       text: >
         Kacyk (kuc)
         Ur. 02-05-2004 r, rasa KUC, matka Karina (kuc felinski), ojciec Intruz (wlkp), ma około 130 cm w kłębie, wałach
       opis: >
         Doskonały kucyk do oprowadzanek, nauki jazdy dzieci na padoku, w terenie dla średniozaawansowanych jeźdźców – uwielbia się ścigać. Pieszczoch, uwielbia łakocie a w szczególności marchewkę i zrobi dla nich wszystko. Jest niezbyt płochliwy i ufa człowiwekowi. Boi się wystrzałów i grzmotów burzy.
+    - image: /img/filipek.jpg
+      text: >
+        JACOBUS BRIENEN - Filipek ur. 13-05-2009 w Holandii własność stajni od 01-10-2015 r. 95cm w kłębie.
+      opis: >
+        Chodzi w siodle i bryczce,pracuje TYLKO na lonzy pod małymi dziećmi
+    - image: /img/nathan.jpg
+      text: >
+        Proboszcz - Natan. Pełna krew angielska ur.15-05-2002 od klaczy NANSZApo DEMON CLUB, ojciec Winds of Light(USA), w pensjonacie od 07-10-2017. 168cm w kłębie.
+      opis: >
+        Koń prywatny - właściciel Michał Grąbczewski
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
