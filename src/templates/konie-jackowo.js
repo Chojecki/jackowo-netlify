@@ -47,11 +47,11 @@ const images = [
   {
     original: k1,
     thumbnail: k1
-  },
-  {
-    original: s1,
-    thumbnail: s1
   }
+  // {
+  //   original: s1,
+  //   thumbnail: s1
+  // }
 ];
 
 export const ProductPageTemplate = ({

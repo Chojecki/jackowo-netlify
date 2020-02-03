@@ -16,10 +16,10 @@ intro:
         Dona (sp) ur.09-05-2003 rasa – szlachetna półkrew, matka Dukla (młp) ojciec Emetic (sp) 163 cm w kłębie, bonitacja 78 punktów
       url: http://www.allbreedpedigree.com/dona34
       opis: >
-        Jest pierwszym koniem  w stajni, kupiona jak miała 7 miesięcy, po złamaniu nadgarstka w wieku 10 miesięcy, nadaje się do nauki jazdy dla poczatkujących na padoku, w teren mogą na niej jeżdzic tylko zaawansowani jeźdźcy
+        Klacz alfa. Jest pierwszym koniem  w stajni, kupiona jak miała 7 miesięcy, po złamaniu nadgarstka w wieku 10 miesięcy, nadaje się do nauki jazdy dla poczatkujących na padoku, w teren mogą na niej jeżdzic tylko zaawansowani jeźdźcy
     - image: /img/aris.jpg
       text: >
-        Aris (Urodzony 03-06-2008 r. rasa – kon fryzyjski, matka Jemima fan breuningswack (fryz) ojciec Wobke 403 (fryz), około 162 cm w kłębie, ogier
+        Aris (Urodzony 03-06-2008 r. rasa – kon fryzyjski, matka Jemima fan breuningswack (fryz) ojciec Wobke 403 (fryz), około 165 cm w kłębie, ogier
       opis: >
         Koń prywatny, trafił do stajni w połowie grudnia 2009r jako półtoraroczny źrebak, najlepszy przyjaciel Sanderusa. Bardzo miły i łagodny w obsłudze. Chodzi pod siodłem, ale wymaga stanowczości i konsekwencji. Uwielbia wykonywać różne sztuczki
     - image: /img/sandi.jpg
@@ -28,13 +28,13 @@ intro:
         Ur. 11-03-2007 r rasa Pełna krew angielska, matka Summer Gift (xx), ojciec Zarewitsch (xx), ma około 162 cm w kłębie
       url: http://www.pedigreequery.com/sanderus
       opis: >
-        Pierwszy źrebak urodzony w stajni – straszliwie rozpieszczony przez właścicieli, a w szczególności p.Jacka. Pod siodłem chodzi samodzielnie lub z najlepszym przyjacielem – Arisem, choć bywa że toleruje Błyska i Kacyka.
+        Pierwszy źrebak urodzony w stajni – straszliwie rozpieszczony przez właścicieli, a w szczególności przez p.Jacka. Pod siodłem chodzi samodzielnie lub z najlepszym przyjacielem – Arisem, choć bywa że toleruje Błyska i Kacyka.
     - image: /img/blynio.jpg
       text: >
         Bxysk - Błysk (tinker)
         ur. 27-03-2005
         matka : Brenda po Nigel; ojciec: Picco 
-        Koń w pensjonacie z przeznaczeniem do jazd rekreacyjnych oraz bryczki.
+        Koń z przeznaczeniem do jazd rekreacyjnych.
       opis: >
         Koń którego „kochają wszystkie dziewczyny”,niezastąpiony na padoku i w terenach, troche leniwy jeśli ma niepewnego i niezdecydowanego jeźdźca. Posiada własne grono wielbicielek na fb.
     - image: /img/cyranka.jpg
@@ -43,11 +43,11 @@ intro:
         Ur. 23-04-2003 r, rasa śląska, matka Celina (ŚL) ojciec Endo (Śl), ma 164 cm w kłębie, bonitacja 80 punktów rodowód dostępny na stronie
       url: http://www.allbreedpedigree.com/cyranka13
       opis: >
-        Jest koniem spokojnym, niezastąpiona w tereny nawet pod niezbyt doświadczonymi jeźdźcami, nie lubi pracować na lonży na padoku i zgrzyta przeraźliwie zębami. 
+        Jest koniem spokojnym, niezastąpiona w tereny nawet pod niezbyt doświadczonymi jeźdźcami, nie lubi pracować na lonży na padoku i zgrzyta przeraźliwie zębami. Niczego się nie boi, jak nie może przejść bierze wszystko taranem.
         06-04-2008 r urodziła swojego pierwszego źrebaka – klaczke Cytrynkę
     - image: /img/bies.jpg
       text: >
-        Bies - Profesor - konik polski ur. 30-04-1997 po klaczy Bielinka po Turkus, ojciec Hades, własność stajni od 2809-2015. 134cm w kłębie.
+        Bies - Profesor - konik polski ur. 30-04-1997 po klaczy Bielinka po Turkus, ojciec Hades, własność stajni od 28-09-2015. 134cm w kłębie.
       opis: >
         Koń profesor nie pracuje już pod jeźdźcami lecz trzyma całe stado w kupie:) Uwielbia przeciągać lonżujących i zwiewac na koniec padoku, Przytulanka dla dzieci i nie tylko Jego karierę sportową mozesz znależć na youtubie, był ogierem kryjącym  do 2009 r
     - image: /img/cytryna.jpg
@@ -56,12 +56,12 @@ intro:
         Ur. 06-04-2008r, rasa śląska, matka Cyranka (śl), ojciec Bakszysz (śl), ma ok. 162 cm w kłęcie
       url: http://www.allbreedpedigree.com/cytrynka
       opis: >
-        Jest koniem ciekawskim i przyjacielskim, wręcz czasami namolnym, niczego się nie boi, jak nie może przejść bierze wszystko taranem, jeśli coś się jej nie podoba, zgrzyta zębami jak mamusia.
+        Jest koniem ciekawskim i przyjacielskim, wręcz czasami namolnym, jeśli coś się jej nie podoba, zgrzyta zębami jak mamusia.
     - image: /img/fredek.jpg
       text: >
         Fred - kuc ur.01-05-2006 po klaczy Dora ojciec Facet pierwotnie koń w pensjonacie, od 03-09-2016, 130 cm w kłębie  własność stajni
       opis: >
-        Odkupiony, wymaga stabilnej ręki, zdecydowania i konsekwencji,najlepszy "przyjaciel" Kacyka w ucieczkach napadoku jeślidzieckonadnimnie panuje, uwielbia kąpać się zarówno w Wiśle jak i w błotku.
+        Odkupiony, wymaga stabilnej ręki, zdecydowania i konsekwencji, najlepszy "przyjaciel" Kacyka w ucieczkach na padoku jeśli dziecko nad nim nie panuje, uwielbia kąpać się zarówno w Wiśle jak i w błotku.
     - image: /img/kacyk.jpg
       text: >
         Kacyk (kuc)
@@ -75,7 +75,7 @@ intro:
         Chodzi w siodle i bryczce,pracuje TYLKO na lonzy pod małymi dziećmi
     - image: /img/nathan.jpg
       text: >
-        Proboszcz - Natan. Pełna krew angielska ur.15-05-2002 od klaczy NANSZApo DEMON CLUB, ojciec Winds of Light(USA), w pensjonacie od 07-10-2017. 168cm w kłębie.
+        Natan - Proboszcz. Pełna krew angielska ur.15-05-2002 od klaczy NANSZApo DEMON CLUB, ojciec Winds of Light(USA), w pensjonacie od 07-10-2017. 168cm w kłębie.
       opis: >
         Koń prywatny - właściciel Michał Grąbczewski
   heading: What we offer
