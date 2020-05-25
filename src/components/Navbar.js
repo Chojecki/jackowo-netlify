@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "gatsby";
+import React from "react";
 import logo from "../img/jackowo-logo_w.png";
 
 const Navbar = class extends React.Component {
@@ -7,7 +7,7 @@ const Navbar = class extends React.Component {
     super(props);
     this.state = {
       active: false,
-      navBarActiveClass: ""
+      navBarActiveClass: "",
     };
   }
 
@@ -15,17 +15,17 @@ const Navbar = class extends React.Component {
     // toggle the active boolean in the state
     this.setState(
       {
-        active: !this.state.active
+        active: !this.state.active,
       },
       // after state has been updated,
       () => {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "is-active"
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: ""
+              navBarActiveClass: "",
             });
       }
     );
@@ -66,13 +66,13 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/konie-jackowo">
                 Nasze Konie
               </Link>
-              <Link className="navbar-item" to="/">
+              {/* <Link className="navbar-item" to="/">
                 Blog
-              </Link>
-              <Link className="navbar-item" to="/">
+              </Link> */}
+              <Link className="navbar-item" to="/about">
                 Cennik
               </Link>
-              <Link className="navbar-item" to="/">
+              <Link className="navbar-item" to="#contact">
                 Kontakt
               </Link>
             </div>

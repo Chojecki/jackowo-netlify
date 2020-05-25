@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "gatsby";
-
+import React from "react";
 import logo from "../img/jackowo-logo_w.png";
 
 const Footer = class extends React.Component {
@@ -23,16 +22,19 @@ const Footer = class extends React.Component {
                   style={{
                     justifyContent: "center",
                     alignItems: "center",
-                    display: "flex"
+                    display: "flex",
                   }}
                 >
                   <Link className="navbar-item" to="/konie-jackowo">
                     Nasze Konie
                   </Link>
 
-                  <Link className="navbar-item" to="/">
+                  <a
+                    className="navbar-item"
+                    href="https://www.facebook.com/Stajnia-Jackowo-1611633439072644/"
+                  >
                     Facebook
-                  </Link>
+                  </a>
 
                   <Link className="navbar-item" to="/">
                     Cennik

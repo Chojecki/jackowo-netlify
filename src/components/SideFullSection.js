@@ -6,7 +6,9 @@ const SideFullSection = ({ main, rev }) => {
       <div className="columns">
         {rev && (
           <div className="sidesection column is-6">
-            <h3 className="is-3">{main.heading}</h3>
+            <h3 style={{ color: "white" }} className="is-3">
+              {main.heading}
+            </h3>
             <p className="is-3">{main.description}</p>
           </div>
         )}
@@ -20,12 +22,14 @@ const SideFullSection = ({ main, rev }) => {
                 ? main.image.image.childImageSharp.fluid.src
                 : main.image.image
             })`,
-            backgroundPosition: `top left`
+            backgroundPosition: `top left`,
           }}
         ></div>
         {!rev && (
           <div className="sidesection column is-6">
-            <h3 className="is-3">{main.heading}</h3>
+            <h3 style={{ color: "white" }} className="is-3">
+              {main.heading}
+            </h3>
             <p className="is-3">{main.description}</p>
           </div>
         )}

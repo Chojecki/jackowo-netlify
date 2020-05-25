@@ -1,11 +1,10 @@
-import React from "react";
+import { graphql, Link } from "gatsby";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
-
+import React from "react";
 import Layout from "../components/Layout";
-import { SideToSide } from "../components/SideToSide";
-import SideFullSection from "../components/SideFullSection";
 import Points from "../components/Points";
+import SideFullSection from "../components/SideFullSection";
+import { SideToSide } from "../components/SideToSide";
 import beata from "../img/beata.jpg";
 
 export const IndexPageTemplate = ({
@@ -18,7 +17,7 @@ export const IndexPageTemplate = ({
   points,
   pointOne,
   pointTwo,
-  pointThree
+  pointThree,
 }) => (
   <div className="content">
     <div
@@ -30,7 +29,7 @@ export const IndexPageTemplate = ({
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
         flexDirection: "column",
-        position: "relative"
+        position: "relative",
       }}
     >
       <div
@@ -41,7 +40,7 @@ export const IndexPageTemplate = ({
           lineHeight: "1",
           justifyContent: "space-around",
           alignItems: "center",
-          flexDirection: "column"
+          flexDirection: "column",
         }}
       >
         <h1
@@ -49,7 +48,7 @@ export const IndexPageTemplate = ({
           style={{
             color: "white",
             lineHeight: "1",
-            padding: "0.25em"
+            padding: "0.25em",
           }}
         >
           {title}
@@ -59,24 +58,24 @@ export const IndexPageTemplate = ({
           style={{
             color: "white",
             lineHeight: "1",
-            padding: "0.25em"
+            padding: "0.25em",
           }}
         >
           {subheading}
         </h3>
       </div>
       <div className="jumbotron-pointsgroup">
-        <Link to="/">
+        <Link to="/about">
           <div className="jumbotron-points">
             <p>{pointOne}</p>
           </div>
         </Link>
-        <Link to="/">
+        <Link to="/about">
           <div className="jumbotron-points">
             <p>{pointTwo}</p>
           </div>
         </Link>
-        <Link to="/">
+        <Link to="#dladzieci">
           <div className="jumbotron-points">
             <p>{pointThree}</p>
           </div>
@@ -122,8 +121,11 @@ export const IndexPageTemplate = ({
       </div>
     </section>
     <SideFullSection rev main={main} />
-    <SideFullSection main={main2} />
-    <section className="section" style={{ padding: 65 }}>
+    <div id="dladzieci">
+      <SideFullSection main={main2} />
+    </div>
+
+    <section id="contact" className="section" style={{ padding: 65 }}>
       <div className="columns">
         <div className="column has-text-centered is-12">
           <img src={beata} />
@@ -155,8 +157,8 @@ IndexPageTemplate.propTypes = {
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array
-  })
+    blurbs: PropTypes.array,
+  }),
 };
 
 const IndexPage = ({ data }) => {
@@ -186,9 +188,9 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+      frontmatter: PropTypes.object,
+    }),
+  }),
 };
 
 export default IndexPage;

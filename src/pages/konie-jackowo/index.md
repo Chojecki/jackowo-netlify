@@ -59,7 +59,7 @@ intro:
         Jest koniem ciekawskim i przyjacielskim, wręcz czasami namolnym, jeśli coś się jej nie podoba, zgrzyta zębami jak mamusia.
     - image: /img/fredek.jpg
       text: >
-        Fred - kuc ur.01-05-2006 po klaczy Dora ojciec Facet pierwotnie koń w pensjonacie, od 03-09-2016, 130 cm w kłębie  własność stajni
+        Fred - kuc ur.01-05-2006 po klaczy Dora ojciec Facet, pierwotnie koń w pensjonacie, od 03-09-2016 własność stajni, 130 cm w kłębie
       opis: >
         Odkupiony, wymaga stabilnej ręki, zdecydowania i konsekwencji, najlepszy "przyjaciel" Kacyka w ucieczkach na padoku jeśli dziecko nad nim nie panuje, uwielbia kąpać się zarówno w Wiśle jak i w błotku.
     - image: /img/kacyk.jpg
@@ -73,11 +73,7 @@ intro:
         JACOBUS BRIENEN - Filipek ur. 13-05-2009 w Holandii własność stajni od 01-10-2015 r. 95cm w kłębie.
       opis: >
         Chodzi w siodle i bryczce,pracuje TYLKO na lonzy pod małymi dziećmi
-    - image: /img/nathan.jpg
-      text: >
-        Natan - Proboszcz. Pełna krew angielska ur.15-05-2002 od klaczy NANSZApo DEMON CLUB, ojciec Winds of Light(USA), w pensjonacie od 07-10-2017. 168cm w kłębie.
-      opis: >
-        Koń prywatny - właściciel Michał Grąbczewski
+
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

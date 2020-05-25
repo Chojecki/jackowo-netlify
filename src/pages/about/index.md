@@ -1,25 +1,40 @@
 ---
 templateKey: "about-page"
 path: /about
-title: Nasze konie
+title: Cennik
 ---
 
-### Shade-grown coffee
+### Rekreacja
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+Jazda konna rekreacyjna 60 min -70,00zł
 
-### Single origin
+Jazda konna rekreacyjna 30 min -40,00zł
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Jazda konna rekreacyjna - wyjazd terenowy 100,00zł / godz
 
-### Sustainable farming
+### Karnety do wykorzystania w danym miesiącu
 
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+8 jazd koszt 510,00 zł
 
-### Direct sourcing
+10 jazd koszt 630,00 zł
 
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+12 jazd koszt 760,00 zl
 
-### Reinvest profits
+### Spacery na kucyku
 
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Spacer na kucyku 30 min - 40,00zł
+
+Spacer na kucyku 15 min - 20,00zł
+
+### O lekcjach
+
+Jazdy są prowadzone przez instruktora lub właściciela stajni. Pierwsza lekcja jest zawsze na czworoboku, abyśmy mogli sprawdzić umiejętności jeźdźca. Jest możliwość jazdy w teren po lasach i polach. Na jazdy można zapisać się u Pani Beaty Komorowskiej: 668 301 333
+Osoby niepełnoletnie, które przychodzą pierwszy raz na jazdę prosimy o przyjście z opiekunem lub rodzicem, ewentualnie przyniesienie oświadczenia podpisanego przez rodzica lub opiekuna.
+
+Służymy również wynajmem kucyka na imprezy okolicznościowe.
+Koszt za 1h: 150zł + koszt dojazdu (cena do uzgodnienia)
+
+### Pensjonat
+
+Pensjonat: 700,00zł/mc
+Do dyspozycji: czworobok 20x60m, lonżownik, padoki, boksy angielskie i zwyczajne.
