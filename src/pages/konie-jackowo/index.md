@@ -29,6 +29,13 @@ intro:
       url: http://www.pedigreequery.com/sanderus
       opis: >
         Pierwszy źrebak urodzony w stajni – straszliwie rozpieszczony przez właścicieli, a w szczególności przez p.Jacka. Pod siodłem chodzi samodzielnie lub z najlepszym przyjacielem – Arisem, choć bywa że toleruje Błyska i Kacyka.
+    - image: /img/prima.jpg
+      text: >
+        Primavera alias Carol
+        ur. 2009r.
+        rasa: Polo Pony
+      opis: >
+
     - image: /img/blynio.jpg
       text: >
         Bxysk - Błysk (tinker)
