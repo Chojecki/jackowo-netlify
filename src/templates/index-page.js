@@ -141,6 +141,9 @@ export const IndexPageTemplate = ({
               <h3 className="has-text-weight-semibold has-text-centered is-size-2">
                 668 301 333
               </h3>
+              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
+                stajnia-jackowo@wp.pl
+              </h3>
             </div>
           </div>
         </div>
