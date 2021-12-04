@@ -10,7 +10,7 @@ subheading: "Nie sztuką jest kochać konie, sztuką jest sprawić by konie poko
 
 points:
   one: Stajnia z wieloletnim doświadczeniem
-  two: Posiadamy 11 koni (w tym kuce)
+  two: Posiadamy 10 koni (w tym kuce)
   three: Jazdy na czworoboku oraz w terenie
 mainpitch:
   title: Kilka słów o nas

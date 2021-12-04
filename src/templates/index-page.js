@@ -144,6 +144,9 @@ export const IndexPageTemplate = ({
               <h3 className="has-text-weight-semibold has-text-centered is-size-2">
                 stajnia-jackowo@wp.pl
               </h3>
+              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
+                Mozaikowa 53, 04-900 Warszawa
+              </h3>
             </div>
           </div>
         </div>

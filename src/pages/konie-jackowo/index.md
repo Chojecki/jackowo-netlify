@@ -54,7 +54,7 @@ intro:
         06-04-2008 r urodziła swojego pierwszego źrebaka – klaczke Cytrynkę
     - image: /img/bies.jpg
       text: >
-        Bies - Profesor - konik polski ur. 30-04-1997 po klaczy Bielinka po Turkus, ojciec Hades, własność stajni od 28-09-2015. 134cm w kłębie.
+        Bies (RIP 22.09.2021) - Profesor - konik polski ur. 30-04-1997 po klaczy Bielinka po Turkus, ojciec Hades, własność stajni od 28-09-2015. 134cm w kłębie. 
       opis: >
         Koń profesor nie pracuje już pod jeźdźcami lecz trzyma całe stado w kupie:) Uwielbia przeciągać lonżujących i zwiewac na koniec padoku, Przytulanka dla dzieci i nie tylko Jego karierę sportową mozesz znależć na youtubie, był ogierem kryjącym  do 2009 r
     - image: /img/cytryna.jpg
