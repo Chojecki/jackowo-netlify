@@ -4,6 +4,32 @@ path: /about
 title: Cennik
 ---
 
+## Cennik od 1 Kwietnia 2022r.
+
+### Rekreacja
+
+Jazda konna rekreacyjna 60 min - 90,00zł
+
+Jazda konna rekreacyjna 30 min - 50,00zł
+
+Jazda konna rekreacyjna - wyjazd terenowy 150,00zł / godz
+
+### Karnety do wykorzystania w danym miesiącu
+
+8 jazd koszt 680,00 zł
+
+10 jazd koszt 850,00 zł
+
+12 jazd koszt 1030,00 zl
+
+### Spacery na kucyku
+
+Spacer na kucyku 30 min - 40,00zł
+
+Spacer na kucyku 15 min - 20,00zł
+
+## Cennik do końca Marca
+
 ### Rekreacja
 
 Jazda konna rekreacyjna 60 min -70,00zł
