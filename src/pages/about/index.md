@@ -24,9 +24,9 @@ Jazda konna rekreacyjna - wyjazd terenowy 150,00zł / godz
 
 ### Spacery na kucyku
 
-Spacer na kucyku 30 min - 40,00zł
+Spacer na kucyku 30 min - 50,00zł
 
-Spacer na kucyku 15 min - 20,00zł
+Spacer na kucyku 15 min - 30,00zł
 
 ## Cennik do końca Marca
 
@@ -62,5 +62,5 @@ Koszt za 1h: 150zł + koszt dojazdu (cena do uzgodnienia)
 
 ### Pensjonat
 
-Pensjonat: 700,00zł/mc
-Do dyspozycji: czworobok 20x60m, lonżownik, padoki, boksy angielskie i zwyczajne.
+Pensjonat: OBECNIE BRAK WOLNYCH BOKSÓW
+<!-- Do dyspozycji: czworobok 20x60m, lonżownik, padoki, boksy angielskie i zwyczajne. -->
