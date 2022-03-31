@@ -28,7 +28,7 @@ Spacer na kucyku 30 min - 50,00zł
 
 Spacer na kucyku 15 min - 30,00zł
 
-## Cennik do końca Marca
+<!-- ## Cennik do końca Marca
 
 ### Rekreacja
 
@@ -50,7 +50,7 @@ Jazda konna rekreacyjna - wyjazd terenowy 100,00zł / godz
 
 Spacer na kucyku 30 min - 40,00zł
 
-Spacer na kucyku 15 min - 20,00zł
+Spacer na kucyku 15 min - 20,00zł -->
 
 ### O lekcjach
 
