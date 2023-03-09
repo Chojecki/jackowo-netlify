@@ -4,27 +4,29 @@ path: /about
 title: Cennik
 ---
 
-## Cennik od 1 Kwietnia 2022r.
+## Cennik od 1 Marca 2023r.
 
 ### Rekreacja
 
-Jazda konna rekreacyjna 60 min - 90,00zł
+Jazda konna rekreacyjna 60 min - 100,00zł
 
-Jazda konna rekreacyjna 30 min - 50,00zł
+Jazda konna dosiadowa 60 min - 120,00zł
 
-Jazda konna rekreacyjna - wyjazd terenowy 150,00zł / godz
+Jazda konna rekreacyjna - wyjazd terenowy 150,00zł
 
 ### Karnety do wykorzystania w danym miesiącu
 
-8 jazd koszt 680,00 zł
+8 jazd koszt 760,00 zł
 
-10 jazd koszt 850,00 zł
+10 jazd koszt 950,00 zł
 
-12 jazd koszt 1030,00 zl
+12 jazd koszt 1140,00 zl
+
+Dopłata do jazdy dosiadowej 20 zł do każdej lekcji karnetowej
 
 ### Spacery na kucyku
 
-Spacer na kucyku 30 min - 50,00zł
+Spacer na kucyku 30 min - 60,00zł
 
 Spacer na kucyku 15 min - 30,00zł
 
@@ -62,5 +64,5 @@ Koszt za 1h: 150zł + koszt dojazdu (cena do uzgodnienia)
 
 ### Pensjonat
 
-Pensjonat: OBECNIE BRAK WOLNYCH BOKSÓW
-<!-- Do dyspozycji: czworobok 20x60m, lonżownik, padoki, boksy angielskie i zwyczajne. -->
+Pensjonat: 700zł / mc
+Do dyspozycji: czworobok 20x60m, lonżownik, padoki, boksy angielskie i zwyczajne.
