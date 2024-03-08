@@ -10,7 +10,7 @@ title: Cennik
 
 Jazda konna rekreacyjna 60 min - 100,00zł
 
-Jazda konna dosiadowa 60 min - 120,00zł
+Jazda konna dosiadowa 60 min - 130,00zł
 
 Jazda konna rekreacyjna - wyjazd terenowy 150,00zł
 
@@ -22,7 +22,7 @@ Jazda konna rekreacyjna - wyjazd terenowy 150,00zł
 
 12 jazd koszt 1140,00 zl
 
-Dopłata do jazdy dosiadowej 20 zł do każdej lekcji karnetowej
+Dopłata do jazdy dosiadowej 30 zł do każdej lekcji karnetowej
 
 ### Spacery na kucyku
 
