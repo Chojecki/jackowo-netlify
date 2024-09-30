@@ -4,7 +4,7 @@ path: /about
 title: Cennik
 ---
 
-## Cennik od 1 Marca 2023r.
+## Cennik od 1 Października 2024r.
 
 ### Rekreacja
 
@@ -60,9 +60,9 @@ Jazdy są prowadzone przez instruktora lub właściciela stajni. Pierwsza lekcja
 Osoby niepełnoletnie, które przychodzą pierwszy raz na jazdę prosimy o przyjście z opiekunem lub rodzicem, ewentualnie przyniesienie oświadczenia podpisanego przez rodzica lub opiekuna.
 
 Służymy również wynajmem kucyka na imprezy okolicznościowe.
-Koszt za 1h: 150zł + koszt dojazdu (cena do uzgodnienia)
+Koszt za 1h: 200zł + koszt dojazdu (cena do uzgodnienia)
 
 ### Pensjonat
 
-Pensjonat: 700zł / mc
+Pensjonat: Brak miejsc
 Do dyspozycji: czworobok 20x60m, lonżownik, padoki, boksy angielskie i zwyczajne.
