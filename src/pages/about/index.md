@@ -30,6 +30,12 @@ Jazda konna rekreacyjna w terenie - 200,00zł / godzine
 
 Dopłata do jazdy dosiadowej 30 zł do każdej lekcji karnetowej
 
+### Spacery na kucyku
+
+Spacer na kucyku 30 min - 70,00zł
+
+Spacer na kucyku 15 min - 40,00zł
+
 <!-- ## Cennik do końca Marca
 
 ### Rekreacja
