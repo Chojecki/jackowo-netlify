@@ -8,27 +8,27 @@ title: Cennik
 
 ### Rekreacja
 
-Jazda konna rekreacyjna 60 min - 100,00zł
+Jazda konna rekreacyjna 1 godzina - 130,00zł
 
-Jazda konna dosiadowa 60 min - 130,00zł
+Jazda konna dosiadowa 1 godzina - 160,00zł
 
-Jazda konna rekreacyjna - wyjazd terenowy 150,00zł
+Jazda konna rekreacyjna 30 min - 70,00zł
 
-### Karnety do wykorzystania w danym miesiącu
+Voucher prezentowy 1 godzina - 150,00zł
 
-8 jazd koszt 760,00 zł
+Voucher prezentowy 30 minut - 80,00 zł
 
-10 jazd koszt 950,00 zł
+Jazda konna rekreacyjna w terenie - 200,00zł / godzine
 
-12 jazd koszt 1140,00 zl
+### Karnety do wykorzystania do wykorzystania w ciągu miesiąca.
+
+8 jazd koszt 990,00 zł
+
+10 jazd koszt 1240,00 zł
+
+12 jazd koszt 1480,00 zl
 
 Dopłata do jazdy dosiadowej 30 zł do każdej lekcji karnetowej
-
-### Spacery na kucyku
-
-Spacer na kucyku 30 min - 60,00zł
-
-Spacer na kucyku 15 min - 30,00zł
 
 <!-- ## Cennik do końca Marca
 
