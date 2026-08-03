@@ -7,4 +7,4 @@
 
 [[plugins]]
   package = "@netlify/plugin-gatsby"
-  version = "3.8.4"
+  pinned_version = "3.8.4"
