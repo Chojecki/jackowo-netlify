@@ -21,16 +21,11 @@ mainpitch:
     Osoby niepełnoletnie, które przychodzą pierwszy raz na jazdę prosimy o przyjście z opiekunem lub rodzicem, ewentualnie przyniesienie oświadczenia podpisanego przez rodzica lub opiekuna.
     Służymy również wynajmem kucyka na imprezy okolicznościowe.
   image:
-    alt: A close-up of a paper filter filled with ground coffee
+    alt: Jazda konna w Stajni Jackowo
     image: /img/summer.jpg
   image2:
-    alt: A close-up of a paper filter filled with ground coffee
+    alt: Konie ze Stajni Jackowo
     image: /img/sandi-aris.jpg
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
 main:
   heading: Czego potrzebujesz aby zacząć?
   description: >

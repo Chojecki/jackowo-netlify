@@ -1,170 +1,172 @@
 import { graphql, Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Points from "../components/Points";
 import SideFullSection from "../components/SideFullSection";
 import { SideToSide } from "../components/SideToSide";
 import beata from "../img/beata.jpg";
 
+const IconPhone = () => (
+  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6">
+    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z" />
+  </svg>
+);
+
+const IconMail = () => (
+  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6">
+    <rect x="2" y="4" width="20" height="16" rx="2" />
+    <path d="m22 7-10 6L2 7" />
+  </svg>
+);
+
+const IconPin = () => (
+  <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.6">
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+    <circle cx="12" cy="10" r="3" />
+  </svg>
+);
+
 export const IndexPageTemplate = ({
   image,
   title,
-  main,
   subheading,
   mainpitch,
+  main,
   main2,
-  points,
-  pointOne,
-  pointTwo,
-  pointThree,
-}) => (
-  <div className="content">
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)) ,url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-        flexDirection: "column",
-        position: "relative",
-      }}
-    >
-      <div
-        className="jumb-title"
-        style={{
-          display: "flex",
-          height: "150px",
-          lineHeight: "1",
-          justifyContent: "space-around",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            color: "white",
-            lineHeight: "1",
-            padding: "0.25em",
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            color: "white",
-            lineHeight: "1",
-            padding: "0.25em",
-          }}
-        >
-          {subheading}
-        </h3>
-      </div>
-      <div className="jumbotron-pointsgroup">
-        <Link to="/about">
-          <div className="jumbotron-points">
-            <p>{pointOne}</p>
-          </div>
-        </Link>
-        <Link to="/about">
-          <div className="jumbotron-points">
-            <p>{pointTwo}</p>
-          </div>
-        </Link>
-        <Link to="#dladzieci">
-          <div className="jumbotron-points">
-            <p>{pointThree}</p>
-          </div>
-        </Link>
-      </div>
-    </div>
-    <section className="section">
-      <div className="column is-10 is-offset-1" style={{ paddingBottom: 65 }}>
-        <div className="content">
-          <div className="columns">
-            <div className="column is-12">
-              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
-                {mainpitch.title}
-              </h3>
-            </div>
+  points
+}) => {
+  const heroImage = getImage(image);
+  return (
+    <div>
+      <header className="hero">
+        <div className="hero-media">
+          {heroImage ? (
+            <GatsbyImage image={heroImage} alt="" />
+          ) : (
+            <img src={image} alt="" />
+          )}
+        </div>
+        <div className="hero-shade" />
+        <div className="hero-content">
+          <p className="hero-kicker">Rodzinna stajnia · Warszawa Wawer</p>
+          <h1>{title}</h1>
+          <div className="rule" />
+          <p className="hero-sub">{subheading}</p>
+          <div className="hero-cta">
+            <Link className="btn btn--gold" to="/konie-jackowo/">
+              Nasze konie
+            </Link>
+            <Link className="btn btn--outline-light" to="/about/">
+              Cennik
+            </Link>
           </div>
         </div>
-      </div>
-      <Points points={points} />
-    </section>
+        <div className="hero-scroll">
+          Przewiń
+          <span className="hero-scroll-line" />
+        </div>
+      </header>
 
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="content">
-              <div className="columns">
-                <div className="column is-12">
-                  <SideToSide
-                    image={mainpitch.image.image.childImageSharp.fluid.src}
-                    text={mainpitch.description}
-                  />
-                  <SideToSide
-                    image={mainpitch.image2.image.childImageSharp.fluid.src}
-                    text={mainpitch.description2}
-                    rev
-                  />
+      <section className="section section--cream">
+        <div className="container">
+          <div className="section-head">
+            <span className="label">O stajni</span>
+            <h2>{mainpitch.title}</h2>
+            <div className="rule" />
+          </div>
+          <Points points={points} />
+        </div>
+      </section>
+
+      <section className="section section--alt">
+        <div className="container">
+          <SideToSide
+            image={mainpitch.image.image.childImageSharp.gatsbyImageData}
+            text={mainpitch.description}
+            lead="Pierwsza lekcja zawsze na czworoboku"
+          />
+          <SideToSide
+            image={mainpitch.image2.image.childImageSharp.gatsbyImageData}
+            text={mainpitch.description2}
+            rev
+            lead="Zapisy u Pani Beaty Komorowskiej"
+          />
+        </div>
+      </section>
+
+      <SideFullSection rev main={main} />
+      <div id="dladzieci">
+        <SideFullSection main={main2} />
+      </div>
+
+      <section id="kontakt" className="section section--cream">
+        <div className="container">
+          <div className="section-head">
+            <span className="label">Kontakt</span>
+            <h2>Skontaktuj się z nami</h2>
+            <div className="rule" />
+          </div>
+          <div className="contact-grid">
+            <div className="contact-photo">
+              <img src={beata} alt="Pani Beata Komorowska" />
+              <p className="contact-caption">
+                Pani Beata Komorowska — właścicielka stajni
+              </p>
+            </div>
+            <div className="contact-info">
+              <div className="contact-item">
+                <span className="contact-icon">
+                  <IconPhone />
+                </span>
+                <div>
+                  <div className="contact-label">Telefon</div>
+                  <a href="tel:+48668301333">668 301 333</a>
+                </div>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">
+                  <IconMail />
+                </span>
+                <div>
+                  <div className="contact-label">E-mail</div>
+                  <a href="mailto:stajnia-jackowo@wp.pl">
+                    stajnia-jackowo@wp.pl
+                  </a>
+                </div>
+              </div>
+              <div className="contact-item">
+                <span className="contact-icon">
+                  <IconPin />
+                </span>
+                <div>
+                  <div className="contact-label">Adres</div>
+                  <a
+                    href="https://maps.google.com/?q=Mozaikowa+53,+04-900+Warszawa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Mozaikowa 53, 04-900 Warszawa
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <SideFullSection rev main={main} />
-    <div id="dladzieci">
-      <SideFullSection main={main2} />
+      </section>
     </div>
-
-    <section id="contact" className="section" style={{ padding: 65 }}>
-      <div className="columns">
-        <div className="column has-text-centered is-12">
-          <img src={beata} />
-        </div>
-      </div>
-      <div className="column is-10 is-offset-1">
-        <div className="content">
-          <div className="columns">
-            <div className="column is-12">
-              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
-                Skontaktuj się z nami
-              </h3>
-              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
-                668 301 333
-              </h3>
-              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
-                stajnia-jackowo@wp.pl
-              </h3>
-              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
-                Mozaikowa 53, 04-900 Warszawa
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-);
+  );
+};
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  main: PropTypes.object,
+  main2: PropTypes.object,
+  points: PropTypes.object
 };
 
 const IndexPage = ({ data }) => {
@@ -175,14 +177,8 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-        pointOne={frontmatter.pointOne}
-        pointTwo={frontmatter.pointTwo}
-        pointThree={frontmatter.pointThree}
         main={frontmatter.main}
         main2={frontmatter.main2}
         points={frontmatter.points}
@@ -194,9 +190,9 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
+      frontmatter: PropTypes.object
+    })
+  })
 };
 
 export default IndexPage;
@@ -208,21 +204,19 @@ export const pageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              quality: 90
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
-        heading
         subheading
         points {
           one
           two
           three
         }
-        pointOne
-        pointTwo
-        pointThree
         mainpitch {
           title
           description
@@ -230,18 +224,22 @@ export const pageQuery = graphql`
           image {
             image {
               childImageSharp {
-                fluid(maxWidth: 1400, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 900
+                  quality: 90
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
           }
           image2 {
             image {
               childImageSharp {
-                fluid(maxWidth: 1400, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 900
+                  quality: 90
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
           }
@@ -252,9 +250,11 @@ export const pageQuery = graphql`
           image {
             image {
               childImageSharp {
-                fluid(maxWidth: 1400, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 1000
+                  quality: 90
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
           }
@@ -265,27 +265,14 @@ export const pageQuery = graphql`
           image {
             image {
               childImageSharp {
-                fluid(maxWidth: 1400, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 1000
+                  quality: 90
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
           }
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
         }
       }
     }

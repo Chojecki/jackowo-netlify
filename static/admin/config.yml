@@ -12,31 +12,11 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post",
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
-
   - name: "pages"
-    label: "Pages"
+    label: "Strony"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Strona główna"
         name: "index"
         fields:
           - {
@@ -45,84 +25,130 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Marek, name: marek, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
+          - { label: "Tytuł", name: "title", widget: "string" }
+          - { label: "Zdjęcie główne (hero)", name: "image", widget: "image" }
+          - { label: "Nagłówek", name: "heading", widget: "string" }
           - {
-              label: Mainpitch,
-              name: mainpitch,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                ],
+              label: "Podtytuł (pod nagłówkiem)",
+              name: "subheading",
+              widget: "string",
             }
-          - { label: Description, name: description, widget: string }
           - {
-              label: Intro,
-              name: intro,
-              widget: object,
+              label: "Trzy punkty na stronie głównej",
+              name: "points",
+              widget: "object",
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
+                  { label: "Punkt 1", name: "one", widget: "string" },
+                  { label: "Punkt 2", name: "two", widget: "string" },
+                  { label: "Punkt 3", name: "three", widget: "string" },
                 ],
             }
           - {
-              label: Main,
-              name: main,
-              widget: object,
+              label: "Sekcja «O stajni»",
+              name: "mainpitch",
+              widget: "object",
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
+                  { label: "Tytuł", name: "title", widget: "string" },
                   {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
+                    label: "Opis 1",
+                    name: "description",
+                    widget: "text",
+                  },
+                  {
+                    label: "Opis 2 (zapisy, opiekunowie)",
+                    name: "description2",
+                    widget: "text",
+                  },
+                  {
+                    label: "Zdjęcie 1",
+                    name: "image",
+                    widget: "object",
                     fields:
                       [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
+                        {
+                          label: "Zdjęcie",
+                          name: "image",
+                          widget: "image",
+                        },
+                        { label: "Alt", name: "alt", widget: "string" },
                       ],
                   },
                   {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
+                    label: "Zdjęcie 2",
+                    name: "image2",
+                    widget: "object",
                     fields:
                       [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
+                        {
+                          label: "Zdjęcie",
+                          name: "image",
+                          widget: "image",
+                        },
+                        { label: "Alt", name: "alt", widget: "string" },
                       ],
                   },
+                ],
+            }
+          - {
+              label: "Sekcja «Czego potrzebujesz aby zacząć?»",
+              name: "main",
+              widget: "object",
+              fields:
+                [
+                  { label: "Nagłówek", name: "heading", widget: "string" },
                   {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
+                    label: "Opis",
+                    name: "description",
+                    widget: "text",
+                  },
+                  {
+                    label: "Zdjęcie",
+                    name: "image",
+                    widget: "object",
                     fields:
                       [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
+                        {
+                          label: "Zdjęcie",
+                          name: "image",
+                          widget: "image",
+                        },
+                        { label: "Alt", name: "alt", widget: "string" },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "Sekcja «Jak zacząć?» (dla dzieci)",
+              name: "main2",
+              widget: "object",
+              fields:
+                [
+                  { label: "Nagłówek", name: "heading", widget: "string" },
+                  {
+                    label: "Opis",
+                    name: "description",
+                    widget: "text",
+                  },
+                  {
+                    label: "Zdjęcie",
+                    name: "image",
+                    widget: "object",
+                    fields:
+                      [
+                        {
+                          label: "Zdjęcie",
+                          name: "image",
+                          widget: "image",
+                        },
+                        { label: "Alt", name: "alt", widget: "string" },
                       ],
                   },
                 ],
             }
       - file: "src/pages/about/index.md"
-        label: "About"
+        label: "Cennik"
         name: "about"
         fields:
           - {
@@ -131,8 +157,78 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Tytuł", name: "title", widget: "string" }
+          - { label: "Zdjęcie nagłówka", name: "image", widget: "image" }
+          - {
+              label: "Data obowiązywania",
+              name: "validFrom",
+              widget: "string",
+            }
+          - {
+              label: "Grupy cenowe (karty)",
+              name: "groups",
+              widget: "list",
+              summary: "{{fields.name}}",
+              fields:
+                [
+                  { label: "Nazwa", name: "name", widget: "string" },
+                  {
+                    label: "Notka pod nagłówkiem",
+                    name: "note",
+                    widget: "string",
+                    required: false,
+                  },
+                  {
+                    label: "Karta wyróżniona",
+                    name: "featured",
+                    widget: "boolean",
+                    default: false,
+                    required: false,
+                  },
+                  {
+                    label: "Pozycje cenowe",
+                    name: "items",
+                    widget: "list",
+                    summary: "{{fields.name}} {{fields.price}}",
+                    fields:
+                      [
+                        {
+                          label: "Usługa",
+                          name: "name",
+                          widget: "string",
+                        },
+                        {
+                          label: "Szczegóły (np. czas)",
+                          name: "detail",
+                          widget: "string",
+                          required: false,
+                        },
+                        {
+                          label: "Cena",
+                          name: "price",
+                          widget: "string",
+                        },
+                      ],
+                  },
+                  {
+                    label: "Notka na dole karty",
+                    name: "note2",
+                    widget: "text",
+                    required: false,
+                  },
+                ],
+            }
+          - {
+              label: "Informacje dodatkowe",
+              name: "info",
+              widget: "list",
+              summary: "{{fields.heading}}",
+              fields:
+                [
+                  { label: "Nagłówek", name: "heading", widget: "string" },
+                  { label: "Treść", name: "text", widget: "text" },
+                ],
+            }
       - file: "src/pages/konie-jackowo/index.md"
         label: "Nasze konie"
         name: "konie-jackowo"
@@ -143,103 +239,29 @@ collections:
               widget: "hidden",
               default: "konie-jackowo",
             }
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Description, name: description, widget: string }
+          - { label: "Tytuł", name: "title", widget: "string" }
+          - { label: "Zdjęcie nagłówka", name: "image", widget: "image" }
+          - { label: "Nagłówek", name: "heading", widget: "string" }
           - {
-              label: Intro,
-              name: intro,
-              widget: object,
+              label: "Konie",
+              name: "intro",
+              widget: "object",
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
                   {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
+                    label: "Lista koni",
+                    name: "blurbs",
+                    widget: "list",
                     fields:
                       [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Main,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Testimonials,
-              name: testimonials,
-              widget: list,
-              fields:
-                [
-                  { label: Quote, name: quote, widget: string },
-                  { label: Author, name: author, widget: string },
-                ],
-            }
-          - { label: Full_image, name: full_image, widget: image }
-          - {
-              label: Pricing,
-              name: pricing,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: string },
-                  {
-                    label: Plans,
-                    name: plans,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Plan, name: plan, widget: string },
-                        { label: Price, name: price, widget: string },
+                        { label: "Zdjęcie", name: "image", widget: "image" },
                         {
-                          label: Description,
-                          name: description,
-                          widget: string,
+                          label: "Dane (imię, rasa, data ur.)",
+                          name: "text",
+                          widget: "text",
                         },
-                        { label: Items, name: items, widget: list },
+                        { label: "Link do rodowodu", name: "url", widget: "string" },
+                        { label: "Opis", name: "opis", widget: "text" },
                       ],
                   },
                 ],

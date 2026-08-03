@@ -2,73 +2,64 @@
 templateKey: "about-page"
 path: /about
 title: Cennik
+image: /img/brown-hors.jpg
+validFrom: "Cennik od 1 października 2024 r."
+groups:
+  - name: Rekreacja
+    items:
+      - name: Jazda konna rekreacyjna
+        detail: 1 godzina
+        price: "130 zł"
+      - name: Jazda konna dosiadowa
+        detail: 1 godzina
+        price: "160 zł"
+      - name: Jazda konna rekreacyjna
+        detail: 30 minut
+        price: "70 zł"
+      - name: Voucher prezentowy
+        detail: 1 godzina
+        price: "150 zł"
+      - name: Voucher prezentowy
+        detail: 30 minut
+        price: "80 zł"
+      - name: Jazda konna rekreacyjna w terenie
+        detail: 1 godzina
+        price: "200 zł"
+  - name: Karnety miesięczne
+    note: Karnety do wykorzystania w ciągu miesiąca
+    featured: true
+    items:
+      - name: Karnet 8 jazd
+        price: "990 zł"
+      - name: Karnet 10 jazd
+        price: "1 240 zł"
+      - name: Karnet 12 jazd
+        price: "1 480 zł"
+    note2: Dopłata do jazdy dosiadowej 30 zł do każdej lekcji karnetowej
+  - name: Spacery na kucyku
+    items:
+      - name: Spacer na kucyku
+        detail: 30 minut
+        price: "70 zł"
+      - name: Spacer na kucyku
+        detail: 15 minut
+        price: "40 zł"
+info:
+  - heading: O lekcjach
+    text: >-
+      Jazdy są prowadzone przez instruktora lub właściciela stajni. Pierwsza
+      lekcja jest zawsze na czworoboku, abyśmy mogli sprawdzić umiejętności
+      jeźdźca. Jest możliwość jazdy w teren po lasach i polach. Na jazdy można
+      zapisać się u Pani Beaty Komorowskiej: 668 301 333. Osoby niepełnoletnie,
+      które przychodzą pierwszy raz na jazdę, prosimy o przyjście z opiekunem
+      lub rodzicem, ewentualnie przyniesienie oświadczenia podpisanego przez
+      rodzica lub opiekuna.
+  - heading: Wynajem kucyka
+    text: >-
+      Służymy również wynajmem kucyka na imprezy okolicznościowe. Koszt za 1h:
+      200 zł + koszt dojazdu (cena do uzgodnienia).
+  - heading: Pensjonat
+    text: >-
+      Pensjonat: brak miejsc. Do dyspozycji: czworobok 20x60m, lonżownik,
+      padoki, boksy angielskie i zwyczajne.
 ---
-
-## Cennik od 1 Października 2024r.
-
-### Rekreacja
-
-Jazda konna rekreacyjna 1 godzina - 130,00zł
-
-Jazda konna dosiadowa 1 godzina - 160,00zł
-
-Jazda konna rekreacyjna 30 min - 70,00zł
-
-Voucher prezentowy 1 godzina - 150,00zł
-
-Voucher prezentowy 30 minut - 80,00 zł
-
-Jazda konna rekreacyjna w terenie - 200,00zł / godzine
-
-### Karnety do wykorzystania do wykorzystania w ciągu miesiąca.
-
-8 jazd koszt 990,00 zł
-
-10 jazd koszt 1240,00 zł
-
-12 jazd koszt 1480,00 zl
-
-Dopłata do jazdy dosiadowej 30 zł do każdej lekcji karnetowej
-
-### Spacery na kucyku
-
-Spacer na kucyku 30 min - 70,00zł
-
-Spacer na kucyku 15 min - 40,00zł
-
-<!-- ## Cennik do końca Marca
-
-### Rekreacja
-
-Jazda konna rekreacyjna 60 min -70,00zł
-
-Jazda konna rekreacyjna 30 min -40,00zł
-
-Jazda konna rekreacyjna - wyjazd terenowy 100,00zł / godz
-
-### Karnety do wykorzystania w danym miesiącu
-
-8 jazd koszt 510,00 zł
-
-10 jazd koszt 630,00 zł
-
-12 jazd koszt 760,00 zl
-
-### Spacery na kucyku
-
-Spacer na kucyku 30 min - 40,00zł
-
-Spacer na kucyku 15 min - 20,00zł -->
-
-### O lekcjach
-
-Jazdy są prowadzone przez instruktora lub właściciela stajni. Pierwsza lekcja jest zawsze na czworoboku, abyśmy mogli sprawdzić umiejętności jeźdźca. Jest możliwość jazdy w teren po lasach i polach. Na jazdy można zapisać się u Pani Beaty Komorowskiej: 668 301 333
-Osoby niepełnoletnie, które przychodzą pierwszy raz na jazdę prosimy o przyjście z opiekunem lub rodzicem, ewentualnie przyniesienie oświadczenia podpisanego przez rodzica lub opiekuna.
-
-Służymy również wynajmem kucyka na imprezy okolicznościowe.
-Koszt za 1h: 200zł + koszt dojazdu (cena do uzgodnienia)
-
-### Pensjonat
-
-Pensjonat: Brak miejsc
-Do dyspozycji: czworobok 20x60m, lonżownik, padoki, boksy angielskie i zwyczajne.

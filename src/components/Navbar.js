@@ -1,98 +1,112 @@
 import { Link } from "gatsby";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../img/jackowo-logo_w.png";
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false,
-      navBarActiveClass: "",
+const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
     };
-  }
+  }, [open]);
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active",
-            })
-          : this.setState({
-              navBarActiveClass: "",
-            });
-      }
-    );
-  };
-
-  render() {
-    return (
+  return (
+    <>
       <nav
-        className="navbar is-transparent"
+        className={`site-nav${scrolled ? " is-scrolled" : ""}${
+          open ? " is-open" : ""
+        }`}
         role="navigation"
-        aria-label="main-navigation"
+        aria-label="nawigacja główna"
       >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            style={{ backgroundColor: "#2b2523" }}
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+        <div className="container nav-inner">
+          <Link
+            to="/"
+            className="nav-logo"
+            title="Stajnia Jackowo — strona główna"
+            onClick={() => setOpen(false)}
           >
-            <div className="navbar-end" style={{ width: "100%" }}>
-              <Link className="navbar-item" to="/">
+            <img src={logo} alt="Stajnia Jackowo — logo" />
+            <span className="nav-logo-text">
+              Stajnia Jackowo
+              <small>Warszawa · Wawer</small>
+            </span>
+          </Link>
+
+          <ul className="nav-links">
+            <li>
+              <Link to="/" activeClassName="is-active">
                 O nas
               </Link>
-              <Link className="navbar-item" to="/konie-jackowo">
+            </li>
+            <li>
+              <Link to="/konie-jackowo/" activeClassName="is-active">
                 Nasze Konie
               </Link>
-              {/* <Link className="navbar-item" to="/">
-                Blog
-              </Link> */}
-              <Link className="navbar-item" to="/about">
+            </li>
+            <li>
+              <Link to="/about/" activeClassName="is-active">
                 Cennik
               </Link>
-              <Link className="navbar-item" to="#contact">
-                Kontakt
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              {/* <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a> */}
-            </div>
-          </div>
+            </li>
+            <li className="nav-cta">
+              <a href="/#kontakt">Kontakt</a>
+            </li>
+          </ul>
+
+          <button
+            className="nav-burger"
+            aria-label={open ? "Zamknij menu" : "Otwórz menu"}
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
         </div>
       </nav>
-    );
-  }
+
+      <div
+        className={`nav-overlay${open ? " is-open" : ""}`}
+        role="dialog"
+        aria-label="menu"
+      >
+        <ul>
+          <li>
+            <Link to="/" onClick={() => setOpen(false)}>
+              O nas
+            </Link>
+          </li>
+          <li>
+            <Link to="/konie-jackowo/" onClick={() => setOpen(false)}>
+              Nasze Konie
+            </Link>
+          </li>
+          <li>
+            <Link to="/about/" onClick={() => setOpen(false)}>
+              Cennik
+            </Link>
+          </li>
+          <li className="nav-overlay-cta">
+            <a href="/#kontakt" onClick={() => setOpen(false)}>
+              Kontakt
+            </a>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
 };
 
 export default Navbar;

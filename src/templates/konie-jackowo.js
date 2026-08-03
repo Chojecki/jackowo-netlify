@@ -1,14 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-
-import "react-image-gallery/styles/scss/image-gallery.scss";
-import ImageGallery from "react-image-gallery";
+import Gallery from "../components/Gallery";
 
 import a1 from "../../static/img/gallery/a1.jpg";
 import b1 from "../../static/img/gallery/b1.jpg";
@@ -19,162 +15,68 @@ import d1 from "../../static/img/gallery/d1.jpg";
 import k1 from "../../static/img/gallery/k1.jpg";
 import s1 from "../../static/img/gallery/s1.jpg";
 
-const images = [
-  {
-    original: a1,
-    thumbnail: a1
-  },
-  {
-    original: b1,
-    thumbnail: b1
-  },
-  {
-    original: b2,
-    thumbnail: b2
-  },
-  {
-    original: c1,
-    thumbnail: c1
-  },
-  {
-    original: cc1,
-    thumbnail: cc1
-  },
-  {
-    original: d1,
-    thumbnail: d1
-  },
-  {
-    original: k1,
-    thumbnail: k1
-  }
-  // {
-  //   original: s1,
-  //   thumbnail: s1
-  // }
+const galleryImages = [
+  { original: a1, thumbnail: a1 },
+  { original: b1, thumbnail: b1 },
+  { original: b2, thumbnail: b2 },
+  { original: c1, thumbnail: c1 },
+  { original: cc1, thumbnail: cc1 },
+  { original: d1, thumbnail: d1 },
+  { original: k1, thumbnail: k1 },
+  { original: s1, thumbnail: s1 }
 ];
 
-export const ProductPageTemplate = ({
-  image,
-  title,
-  heading,
-  description,
-  intro,
-  main,
-  testimonials,
-  fullImage,
-  pricing
-}) => (
-  <div className="content">
-    <div
-      className="full-width-image-container margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`
-      }}
-    >
-      <h2
-        className="has-text-weight-bold is-size-1"
-        style={{
-          color: "white",
-          padding: "1rem"
-        }}
-      >
-        {title}
-      </h2>
+export const ProductPageTemplate = ({ image, title, heading, intro }) => {
+  const heroImage = getImage(image);
+
+  return (
+    <div>
+      <header className="page-hero">
+        <div className="hero-media">
+          {heroImage ? (
+            <GatsbyImage image={heroImage} alt="" />
+          ) : (
+            <img src={image} alt="" />
+          )}
+        </div>
+        <div className="hero-shade" />
+        <div className="container page-hero-content">
+          <h1>{title}</h1>
+          <p className="hero-kicker">Stajnia Jackowo · Warszawa Wawer</p>
+        </div>
+      </header>
+
+      <section className="section section--cream">
+        <div className="container">
+          <div className="section-head">
+            <span className="label">Nasi podopieczni</span>
+            <h2>{heading}</h2>
+            <div className="rule" />
+          </div>
+          <Features gridItems={intro.blurbs} />
+        </div>
+      </section>
+
+      <section className="section section--alt">
+        <div className="container">
+          <div className="section-head">
+            <span className="label">Galeria</span>
+            <h2>Nasza stajnia w obiektywie</h2>
+            <div className="rule" />
+          </div>
+          <Gallery images={galleryImages} />
+        </div>
+      </section>
     </div>
-
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <h3 className="has-text-weight-semibold has-text-centered is-size-2">
-                {heading}
-              </h3>
-            </div>
-          </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
-
-              {/* <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image1} />
-                      </article>
-                    </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image2} />
-                      </article>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image3} />
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <Testimonials testimonials={testimonials} />
-              <div
-                className="full-width-image-container"
-                style={{
-                  backgroundImage: `url(${
-                    fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage
-                  })`
-                }}
-              />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
-              </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} /> */}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="section">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h3 className="has-text-weight-semibold has-text-centered is-size-2">
-              {"Galeria"}
-            </h3>
-            <ImageGallery items={images} />
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-);
+  );
+};
 
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array
-  }),
-  main: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
-  }),
-  testimonials: PropTypes.array,
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array
   })
 };
 
@@ -187,12 +89,7 @@ const ProductPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        description={frontmatter.description}
         intro={frontmatter.intro}
-        main={frontmatter.main}
-        testimonials={frontmatter.testimonials}
-        fullImage={frontmatter.full_image}
-        pricing={frontmatter.pricing}
       />
     </Layout>
   );
@@ -215,82 +112,38 @@ export const productPageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              quality: 90
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
         heading
-        description
         intro {
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(
+                  width: 700
+                  aspectRatio: 1.6
+                  quality: 90
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+            }
+            fullImage: image {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 1600
+                  quality: 92
+                  formats: [AUTO, WEBP, AVIF]
+                )
               }
             }
             text
             url
             opis
-          }
-          heading
-          description
-        }
-        main {
-          heading
-          description
-          image1 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          image2 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          image3 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-        testimonials {
-          author
-          quote
-        }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
           }
         }
       }

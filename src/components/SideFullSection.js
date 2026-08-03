@@ -1,38 +1,28 @@
 import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const SideFullSection = ({ main, rev }) => {
+  const image = getImage(main?.image?.image);
+
   return (
-    <section className="section section--flex">
-      <div className="columns">
-        {rev && (
-          <div className="sidesection column is-6">
-            <h3 style={{ color: "white" }} className="is-3">
-              {main.heading}
-            </h3>
-            <p className="is-3">{main.description}</p>
-          </div>
+    <section className={`band${rev ? " band--rev" : ""}`}>
+      <div className="band-media">
+        {image ? (
+          <GatsbyImage image={image} alt="" loading="lazy" />
+        ) : (
+          <img
+            src={main?.image?.image}
+            alt=""
+            loading="lazy"
+          />
         )}
-        <div
-          className="column is-6"
-          style={{
-            height: "65vh",
-            backgroundSize: "cover",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)) ,url(${
-              !!main.image.image.childImageSharp
-                ? main.image.image.childImageSharp.fluid.src
-                : main.image.image
-            })`,
-            backgroundPosition: `top left`,
-          }}
-        ></div>
-        {!rev && (
-          <div className="sidesection column is-6">
-            <h3 style={{ color: "white" }} className="is-3">
-              {main.heading}
-            </h3>
-            <p className="is-3">{main.description}</p>
-          </div>
-        )}
+      </div>
+      <div className="band-body">
+        <div className="band-inner">
+          <span className="label">{rev ? "Dla dorosłych" : "Dla dzieci"}</span>
+          <h2>{main.heading}</h2>
+          <p>{main.description}</p>
+        </div>
       </div>
     </section>
   );

@@ -1,16 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: "Stajnia Jackowo",
-    siteUrl: "https://stajnia-jackowo.netlify.com/",
+    siteUrl: "https://stajnia-jackowo.netlify.app/",
     description:
-      "Rodzinna Stajnia Wawer | Pensjonat | Proponujemy lekcje jazdy konnej w Warszawie Wawer. Rekreacja oraz imprezy firmowe. Kucyki w Warszawie Wawer"
+      "Rodzinna Stajnia Wawer | Pensjonat | Proponujemy lekcje jazdy konnej w Warszawie Wawer. Rekreacja oraz imprezy firmowe. Kucyki w Warszawie Wawer",
+    author: "Stajnia Jackowo"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     "gatsby-plugin-sass",
     {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/static/img`,
@@ -24,56 +23,36 @@ module.exports = {
         name: "pages"
       }
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/img`,
-        name: "images"
-      }
-    },
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
+      options: {}
+    },
+    {
+      resolve: "gatsby-plugin-sitemap",
       options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-relative-images",
-            options: {
-              name: "uploads"
-            }
-          },
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 2048
-            }
-          },
-          {
-            resolve: "gatsby-remark-copy-linked-files",
-            options: {
-              destinationDir: "static"
-            }
-          }
-        ]
+        excludes: ["/admin/", "/dev-404-page/", "/404/", "/404.html"]
       }
     },
     {
-      resolve: "gatsby-plugin-netlify-cms",
+      resolve: "gatsby-plugin-netlify",
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`
+        headers: {
+          "/*": [
+            "X-Frame-Options: DENY",
+            "X-Content-Type-Options: nosniff",
+            "Referrer-Policy: strict-origin-when-cross-origin",
+            "Permissions-Policy: camera=(), microphone=(), geolocation=()",
+            "Content-Security-Policy: default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'none'"
+          ],
+          "/admin/*": [
+            "Content-Security-Policy: default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; img-src 'self' data: blob: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://identity.netlify.com https://cdn.jsdelivr.net https://unpkg.com; connect-src 'self' https:; object-src 'none'"
+          ],
+          "/static/*": ["Cache-Control: public, max-age=31536000, immutable"]
+        }
       }
-    },
-    {
-      resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
-      options: {
-        develop: true, // Activates purging in npm run develop
-        purgeOnly: ["/all.sass"] // applies purging only on the bulma css file
-      }
-    }, // must be after other CSS plugins
-    "gatsby-plugin-netlify" // make sure to keep it last in the array
+    }
   ]
 };

@@ -1,29 +1,24 @@
 import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-export const SideToSide = ({ image, text, rev }) => {
+export const SideToSide = ({ image, text, rev, lead }) => {
+  const gatsbyImage = getImage(image);
+
   return (
-    <div style={{ paddingTop: 30, paddingBottom: 30, marginTop: 40 }}>
-      <div className="columns">
-        <div className="columns">
-          {!rev && (
-            <div className="column is-6">
-              <p className="side-text is-size-4">{text}</p>
-            </div>
-          )}
-          <div className="column is-6">
-            <img
-              className="side-image"
-              src={image}
-              style={{ maxHeight: 400, minWidth: "100%", objectFit: "cover" }}
-            />
-          </div>
-          {rev && (
-            <div className="column is-6">
-              <p className="side-text is-size-4">{text}</p>
-            </div>
-          )}
-        </div>
+    <div className={`split${rev ? " split--rev" : ""}`}>
+      <div className="split-media">
+        {gatsbyImage ? (
+          <GatsbyImage image={gatsbyImage} alt="" loading="lazy" />
+        ) : (
+          <img src={image} alt="" loading="lazy" />
+        )}
+      </div>
+      <div className="split-text">
+        {lead && <p className="lead">{lead}</p>}
+        <p>{text}</p>
       </div>
     </div>
   );
 };
+
+export default SideToSide;

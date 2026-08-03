@@ -4,44 +4,22 @@ import horseshoe from "../img/horseshoe.png";
 import saddle from "../img/saddle.png";
 
 const Points = ({ points }) => {
+  const items = [
+    { icon: horse, alt: "Koń", text: points.one },
+    { icon: horseshoe, alt: "Podkowa", text: points.two },
+    { icon: saddle, alt: "Siodło", text: points.three }
+  ];
+
   return (
-    <div className="columns">
-      <div className="column">
-        <div className="points-first">
-          <img
-            src={horse}
-            alt="Kaldi"
-            style={{ width: "88px", paddingBottom: 25 }}
-          />
-          <h4 className="has-text-centered has-text-weight-semibold">
-            {points.one}
-          </h4>
+    <div className="points-row">
+      {items.map(({ icon, alt, text }) => (
+        <div className="point" key={alt}>
+          <div className="point-icon">
+            <img src={icon} alt={alt} />
+          </div>
+          <h3>{text}</h3>
         </div>
-      </div>
-      <div className="column">
-        <div className="points-first">
-          <img
-            src={horseshoe}
-            alt="Kaldi"
-            style={{ width: "88px", paddingBottom: 25 }}
-          />
-          <h4 className="has-text-centered has-text-weight-semibold">
-            {points.two}
-          </h4>
-        </div>
-      </div>
-      <div className="column">
-        <div className="points-first">
-          <img
-            src={saddle}
-            alt="Kaldi"
-            style={{ width: "88px", paddingBottom: 25 }}
-          />
-          <h4 className="has-text-centered has-text-weight-semibold">
-            {points.three}
-          </h4>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
